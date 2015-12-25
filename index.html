@@ -21,7 +21,7 @@
 /* Make it move */
 @keyframes marquee {
     0%   { text-indent: 100% }
-    100% { text-indent: -100% }
+    100% { text-indent: -150% }
 }
 @keyframes merry {
     0%   { text-indent: 150% }
@@ -63,7 +63,114 @@ font-weight:bold;
    -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
     animation-timing-function: cubic-bezier(1,1,0.75,0.15);
 }
+
+#animated_div img
+{
+width:150px;
+height:225px;
+position:absolute;left:10%;
+animation:animated_div 5s 5;
+-moz-animation:animated_div 5s 5;
+-webkit-animation:animated_div 5s 5;
+-o-animation:animated_div 5s 5;
+}
+
+#animated_div img:hover {transform:rotate(20deg)}
 	
+
+@keyframes animated_div
+{
+0%		{transform: rotate(0deg);left:10%;opacity:0.2;}
+25%		{transform: rotate(20deg);left:10%;}
+50%		{transform: rotate(0deg);left:90%;}
+55%		{transform: rotate(0deg);left:90%;}
+70%		{transform: rotate(0deg);left:90%;opacity:1;}
+100%	{transform: rotate(-360deg);left:10%;opacity:0.2}
+}
+
+@-webkit-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);left:10%;opacity:0.2;}
+25%		{-webkit-transform: rotate(20deg);left:10%;}
+50%		{-webkit-transform: rotate(0deg);left:90%;}
+55%		{-webkit-transform: rotate(0deg);left:90%;}
+70%		{-webkit-transform: rotate(0deg);left:90%;opacity:1;}
+100%	{-webkit-transform: rotate(-360deg);left:10%;opacity:0.2;}
+}
+
+@-moz-keyframes animated_div
+{
+0%   {-moz-transform: rotate(0deg);left:10%;opacity:0.2}
+25%  {-moz-transform: rotate(20deg);left:10%;}
+50%  {-moz-transform: rotate(0deg);left:90%;}
+55%  {-moz-transform: rotate(0deg);left:90%;}
+70%  {-moz-transform: rotate(0deg);left:90%;opacity:1;}
+100% {-moz-transform: rotate(-360deg);left:10%;opacity:0.2}
+}
+
+@-o-keyframes animated_div
+{
+0%	{transform: rotate(0deg);left:10%;opacity:0.2;}
+25%	{transform: rotate(20deg);left:10%;}
+50%	{transform: rotate(0deg);left:90%;}
+55%	{transform: rotate(0deg);left:90%;}
+70%	{transform: rotate(0deg);left:90%;opacity:1;}
+100%{transform: rotate(-360deg);left:10%;opacity:0.2}
+}
+
+#animated_div2 img
+{
+width:150px;
+height:225px;
+position:absolute;right:10%;
+animation:animated_div2 5s 5;
+-moz-animation:animated_div2 5s 5;
+-webkit-animation:animated_div2 5s 5;
+-o-animation:animated_div2 5s 5;
+}
+
+#animated_div2 img:hover {transform:rotate(20deg)}
+	
+
+@keyframes animated_div2
+{
+0%		{transform: rotate(0deg);right:10%;opacity:0.2;}
+25%		{transform: rotate(20deg);right:10%;}
+50%		{transform: rotate(0deg);right:90%;}
+55%		{transform: rotate(0deg);right:90%;}
+70%		{transform: rotate(0deg);right:90%;opacity:1;}
+100%	{transform: rotate(-360deg);right:10%;opacity:0.2}
+}
+
+@-webkit-keyframes animated_div2
+{
+0%		{-webkit-transform: rotate(0deg);right:10%;opacity:0.2;}
+25%		{-webkit-transform: rotate(20deg);right:10%;}
+50%		{-webkit-transform: rotate(0deg);right:90%;}
+55%		{-webkit-transform: rotate(0deg);right:90%;}
+70%		{-webkit-transform: rotate(0deg);right:90%;opacity:1;}
+100%	{-webkit-transform: rotate(-360deg);right:10%;opacity:0.2;}
+}
+
+@-moz-keyframes animated_div2
+{
+0%   {-moz-transform: rotate(0deg);right:10%;opacity:0.2}
+25%  {-moz-transform: rotate(20deg);right:10%;}
+50%  {-moz-transform: rotate(0deg);right:90%;}
+55%  {-moz-transform: rotate(0deg);right:90%;}
+70%  {-moz-transform: rotate(0deg);right:90%;opacity:1;}
+100% {-moz-transform: rotate(-360deg);right:10%;opacity:0.2}
+}
+
+@-o-keyframes animated_div2
+{
+0%	{transform: rotate(0deg);right:10%;opacity:0.2;}
+25%	{transform: rotate(20deg);right:10%;}
+50%	{transform: rotate(0deg);right:90%;}
+55%	{transform: rotate(0deg);right:90%;}
+70%	{transform: rotate(0deg);right:90%;opacity:1;}
+100%{transform: rotate(-360deg);right:10%;opacity:0.2}
+}
 
 /* Make it pretty */
 .microsoft {
@@ -266,8 +373,10 @@ font-weight:bold;
     </script>
 </head>
 <body style="background-color:#000033">
-<p class="microsoft marquee"> To Vivian, Keith, Sean, Soirse and Oisin:</p>
+<p class="microsoft marquee"> To Vivianne, Keith, Sean, Saoirse and Oisin:</p>
 <p class="microsoft merry" id="merry"> <span style="width:200px"></span>Merry Christmas to all of you! </p>
 <p class="microsoft from">  <span style="width:200px"></span>From David, Leah and Jawzy</p>
+<div id="animated_div"><img src="snowman34.png"></div>
+<div id="animated_div2"><img src="snowman34.png"></div>
 </body>
 </html>
